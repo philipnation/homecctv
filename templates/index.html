@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+{% block title %}Video stream{% endblock title %}
+{% block body %}
+<!--<h1>Video Stream</h1>-->
+    <img src="{{ url_for('video_feed') }}" style="margin:auto;display:block;width:100%; height:50vh">
+    <!--<form method="POST" action="/record">
+      <button type="submit">{% if recording %}Stop{% else %}Record{% endif %}</button>
+    </form>-->
+{% endblock body %}
